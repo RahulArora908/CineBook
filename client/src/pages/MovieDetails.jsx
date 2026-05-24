@@ -9,6 +9,7 @@ import DateSelect from '../components/DateSelect'
 // import Loading from '../components/Loading'
 // import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
+import Loading from '../components/Loading'
 
 const MovieDetails = () => {
   const navigate=useNavigate()
@@ -19,7 +20,6 @@ const MovieDetails = () => {
   const getShow = async () => {
     const show = dummyShowsData.find(show => show._id === id)
     if(show){
-
       setShow({
         movie: show,
         dateTime: dummyDateTimeData
@@ -91,7 +91,7 @@ const MovieDetails = () => {
           <button onClick={()=> {navigate('/movies'); scrollTo(0,0)}} className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer'>Show more</button>
       </div>
     </div>
-  ) : <div>Loading</div>
+  ) : <Loading />
 }
 
 export default MovieDetails
