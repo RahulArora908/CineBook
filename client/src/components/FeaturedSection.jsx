@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom'
 import BlurCircle from './BlurCircle'
 import { dummyShowsData } from '../assets/assets'
 import MovieCard from './MovieCard'
+// import { useAppContext } from '../context/AppContext'
 
 const FeaturedSection = () => {
 
     const navigate = useNavigate()
+    // const {shows}=useAppContext()
 
     return (
         <div className='px-6 md:px-16 lg:px-24 xl:px-44 overflow-hidden'>

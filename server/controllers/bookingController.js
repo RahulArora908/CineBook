@@ -1,4 +1,4 @@
-import Show from "../models/Show";
+import Show from "../models/Show.js";
 import Booking from "../models/Booking.js";
 
 const checkSeatsAvailability = async (showId, selectedSeats)=>{
