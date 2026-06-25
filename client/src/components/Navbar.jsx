@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { MenuIcon, SearchIcon, TicketPlus, XIcon } from 'lucide-react'
 import { Show, useClerk, UserButton } from '@clerk/react'
-import { useAppContext } from '../context/appContext'
+import { useAppContext } from '../context/AppContext'
 
 const Navbar = () => {
 
